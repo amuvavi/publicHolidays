@@ -2,9 +2,11 @@
 An Application that fetches South African Holidays for a given year and displays them on the page.
 
 
-Installation
-Clone this repository with git clone
+## Installation
+Clone this repository with git clone *https://github.com/amuvavi/publicHolidays.git*
 Run cp .env.example .env to copy .env file
-Run make setup to setup local environment
-Run make start to start the application
-Github Setup
+Run composer update
+Run php artisan key:generate
+Run php artisan migrate after creating the database
+Run mpm install && npm run dev
+Run php artisan serve
