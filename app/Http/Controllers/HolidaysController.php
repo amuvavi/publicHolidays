@@ -10,4 +10,15 @@ use PDF;
 class HolidaysController extends Controller
 {
     use HolidayTrait;
+    
+    public function createPDF() {
+
+        $holidays = $this->holidays->all();
+    
+        view()->share('holidays', $holidays);
+        $pdf = PDF::loadView('welcome',  $holidays);
+    
+        return $pdf->download('pdf_file.pdf');
+    }
+      
 }

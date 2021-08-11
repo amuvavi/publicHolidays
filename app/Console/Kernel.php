@@ -24,8 +24,7 @@ class Kernel extends ConsoleKernel
      */
     protected function schedule(Schedule $schedule)
     {
-      
-      
+        $schedule->command('app:load_holiday_data')->yearly();
     }
 
     /**
