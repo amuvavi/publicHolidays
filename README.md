@@ -11,7 +11,7 @@ Run php artisan migrate after creating the database
 Run mpm install && npm run dev
 Run php artisan serve
 
-Run php artisan app:load_holiday_data to run the console command
+Run *php artisan app:load_holiday_data* to run the console command
 
 
 
