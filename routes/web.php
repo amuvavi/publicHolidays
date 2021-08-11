@@ -16,7 +16,7 @@ use Illuminate\Support\Facades\Http;
 */
 
 Route::get('/', [HolidaysController::class, 'index']);
-
+Route::get('/holiday/pdf', [HolidaysController::class, 'createPDF']);
 
 
 
